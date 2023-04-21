@@ -25,12 +25,11 @@
 
 // ***************** CODE HERE  ***************** 
 
-
-function printDigits(num){
-    let rem = Math.abs(num); // => variable to hold value as it changes
-    while (rem%10 > 0){ // => loop to keep going 
-    console.log(rem % 10)
-    rem = Math.floor(rem/10)
+function printDigits(num){ // => function that takes in one parameter
+    let rem = Math.abs(num); // => variable to hold value as it changes. Abs value in case negative
+    while (rem%10 > 0){ // => loop to keep going while modulo result greater then zero
+    console.log(rem % 10) // => print last value using modulo
+    rem = Math.floor(rem/10) // => using Math floor to drop last value
     }
 }
 
